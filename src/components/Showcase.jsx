@@ -7,32 +7,33 @@ export default function Showcase() {
         <div className="showcase-top">
           <div>
             <p className="section-label">Featured Project</p>
-            <h2 className="showcase-title">AI Skincare<br />Consultation</h2>
+            <h2 className="showcase-title">
+              <img src="/logo-primary-color-without-bg.png" alt="Encantta Logo" className="showcase-logo" />
+              Encantta
+            </h2>
             <p className="showcase-desc">
-              A web application for a beauty center that analyzes skin conditions — classifying acne, 
-              assessing severity, and providing a chatbot to answer queries using KG-RAG. Implemented with 
-              NestJS microservices, TensorFlow, Neo4j, and Airflow.
+              Encantta is an AI-powered conversation intelligence application analyzing emotional tone and psychological patterns in text. It turns everyday conversations into insights that help people build deeper understanding, empathy, and healthier relationships.
             </p>
-            <a href="#work" className="showcase-cta" id="showcase-view-btn">View Architecture →</a>
+            <a href="https://encantta.click/" target="_blank" rel="noopener noreferrer" className="showcase-cta" id="showcase-view-btn">View Project →</a>
           </div>
         </div>
 
         <div className="showcase-visual">
-          <div className="showcase-main-img">
-            <img src="/showcase_street.png" alt="Street fashion editorial showcase" />
+          <a href="https://encantta.click/" target="_blank" rel="noopener noreferrer" className="showcase-main-img">
+            <img src="/encantta-hero.jpg" alt="Encantta Platform Preview" />
             <div className="showcase-badge">
-              <span>BE SUPPORTED BY</span>
+              <span>Powered by AI</span>
             </div>
-          </div>
+          </a>
           <div className="showcase-side">
             <div className="showcase-info-card">
-              <span className="sc-tag">2024 — University Project</span>
-              <h4 className="sc-project-name">Facial Analysis App</h4>
-              <p className="sc-desc">Microservices architecture with Deep Learning integration.</p>
+              <span className="sc-tag">2026 — Commercial Project</span>
+              <h4 className="sc-project-name">Conversation Intelligence</h4>
+              <p className="sc-desc">Clear conversations. No misunderstandings.</p>
             </div>
             <div className="showcase-stat-card">
-              <span className="sc-stat-num">5+</span>
-              <span className="sc-stat-label">AI Models Deployed</span>
+              <span className="sc-stat-num">7+</span>
+              <span className="sc-stat-label">Conversation Insights</span>
             </div>
           </div>
         </div>

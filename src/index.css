@@ -8,16 +8,16 @@
 }
 
 :root {
-  --olive: #6b7c3f;
-  --olive-dark: #4a5a28;
-  --olive-light: #8a9a55;
+  --olive: #4A6F57;
+  --olive-dark: #375341;
+  --olive-light: #6b8c77;
   --cream: #f5f2ec;
   --dark: #1a1a18;
   --dark-2: #2a2a26;
   --gray: #7a7a72;
   --gray-light: #b8b8b0;
   --white: #ffffff;
-  --accent: #c8d66a;
+  --accent: #9FB19E;
   --font-main: "Inter", sans-serif;
   --font-display: "Playfair Display", serif;
   --max-w: 1100px;
