@@ -1,23 +1,29 @@
 import "./Navbar.css";
 
 export default function Navbar() {
-  const navLinks = ["Home", "About", "Work", "Services", "Contact"];
+  const navLinks = [
+    { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Work", id: "work" },
+    { name: "Education", id: "education" },
+    { name: "Showcase", id: "showcase" },
+  ];
 
   return (
     <nav className="navbar" id="navbar">
       <div className="navbar-inner">
-        <div className="nav-logo">Portfolio</div>
+        <div className="nav-logo">Tram Tran</div>
         <ul className="nav-links">
           {navLinks.map((link) => (
-            <li key={link}>
-              <a href={`#${link.toLowerCase()}`} className="nav-link">
-                {link}
+            <li key={link.id}>
+              <a href={`#${link.id}`} className="nav-link">
+                {link.name}
               </a>
             </li>
           ))}
         </ul>
         <a href="mailto:jasminebkdn@gmail.com" className="nav-cta">
-          Hire Me
+          Contact Me
         </a>
       </div>
     </nav>
