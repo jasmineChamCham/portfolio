@@ -1,0 +1,4 @@
+/* App-level resets on top of global */
+#root {
+  min-height: 100vh;
+}
