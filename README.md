@@ -1,16 +1,24 @@
-# React + Vite
+# Portfolio — Tram Tran
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This is where I showcase my work as a **Fullstack Developer**, focusing on building impactful technology that bridges human communication and advanced AI.
 
-Currently, two official plugins are available:
+## 🚀 About This Project
+This portfolio is more than just a list of links; it's a reflection of my journey through software engineering and data technology. I built this space using **React** and **Vite** to provide a fast, elegant, and interactive experience for anyone interested in my work.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Featured Work
+- **[Encantta](https://encantta.click/)**: My most recent commercial-grade project. It's a "Conversation Intelligence" platform that uses AI to decode emotional tones and psychological patterns, helping people communicate with more empathy.
+- **Experience Journey**: From fullstack engineering at **Saigon Technology** to handling complex data pipelines at **DAC Data Technology** and **Datahouse**, this portfolio tracks my professional growth and technical evolution.
+- **Academic Foundation**: Details of my graduation thesis from **Danang University of Science and Technology (DUT)**, where I first combined AI with practical web solutions.
 
-## React Compiler
+## ✨ Technical Highlights
+- **Interactive Modals**: Seamlessly explore my work history and education details.
+- **Brand Integration**: A custom-built design system that synchronizes colors and typography (Inter & Playfair Display) to create a premium feel.
+- **Performance Optimized**: Built with modern web standards for lightning-fast loading and smooth transitions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Built With
+- **React 19** & **Vite**
+- **Vanilla CSS** (Custom Design Tokens)
+- **Lucide React** for iconography
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+*Created with ❤️ to showcase my passion for meaningful code.*
