@@ -6,8 +6,8 @@ export default function Hero() {
       {/* Full-bleed photo */}
       <div className="hero-photo-wrap">
         <img
-          src="/hero_portrait.png"
-          alt="Janice - Portfolio Designer"
+          src="jasmine.jpg"
+          alt="Tram - Portfolio Designer"
           className="hero-photo"
         />
         {/* Dark gradient overlay so text is readable */}
@@ -30,7 +30,7 @@ export default function Hero() {
         </div>
 
         {/* Big name */}
-        <h1 className="hero-name">Janice</h1>
+        <h1 className="hero-name">Tram</h1>
 
         {/* QR code — positioned mid-right */}
         <div className="hero-qr">

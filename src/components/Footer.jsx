@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-left">
             <p className="footer-copy-label">Contact/Owner</p>
-            <a href="mailto:janice92@gmail.com" className="footer-email">janice92@gmail.com</a>
+            <a href="mailto:jasminebkdn@gmail.com" className="footer-email">jasminebkdn@gmail.com</a>
           </div>
           <div className="footer-center">
             <a href="#home" className="footer-cta-btn" id="footer-cta">
@@ -29,12 +29,12 @@ export default function Footer() {
 
         {/* Big name */}
         <div className="footer-name-wrap">
-          <h2 className="footer-big-name">Janice</h2>
+          <h2 className="footer-big-name">Tram</h2>
         </div>
 
         {/* Bottom bar */}
         <div className="footer-bottom">
-          <p className="footer-legal">© 2024 Janice. All rights reserved.</p>
+          <p className="footer-legal">© 2024 Tram. All rights reserved.</p>
           <p className="footer-made">Designed & Built with ❤</p>
         </div>
       </div>

@@ -15,7 +15,7 @@ export default function AboutMe() {
             <p className="section-label">About Me</p>
             <h2 className="about-heading">About Me</h2>
             <p className="about-text">
-              I'm Janice, a creative designer specializing in Webflow development, UI-UX design,
+              I'm Tram, a creative designer specializing in Webflow development, UI-UX design,
               and motion graphics. With over a decade of experience crafting digital experiences,
               I help brands tell their stories through thoughtful, beautiful design.
             </p>

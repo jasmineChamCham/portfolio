@@ -6,7 +6,7 @@ const testimonials = [
     name: 'Grace Brown',
     role: 'Founder, Lumina Studio',
     avatar: '/client_avatar.png',
-    quote: 'Janice completely transformed our digital presence. The Webflow site she built for us not only looks stunning but has dramatically improved our conversion rates. Her attention to detail and creative vision are unmatched.',
+    quote: 'Tram completely transformed our digital presence. The Webflow site she built for us not only looks stunning but has dramatically improved our conversion rates. Her attention to detail and creative vision are unmatched.',
     rating: 5,
   },
   {
@@ -14,7 +14,7 @@ const testimonials = [
     name: 'Alex Reed',
     role: 'CEO, Orbita App',
     avatar: '/client_avatar.png',
-    quote: 'Working with Janice on our app\'s UI/UX was an absolute pleasure. She has a rare ability to translate complex product requirements into beautiful, intuitive interfaces. Highly recommend!',
+    quote: 'Working with Tram on our app\'s UI/UX was an absolute pleasure. She has a rare ability to translate complex product requirements into beautiful, intuitive interfaces. Highly recommend!',
     rating: 5,
   },
 ]

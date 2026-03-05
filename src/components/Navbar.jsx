@@ -16,7 +16,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <a href="mailto:janice92@gmail.com" className="nav-cta">
+        <a href="mailto:jasminebkdn@gmail.com" className="nav-cta">
           Hire Me
         </a>
       </div>

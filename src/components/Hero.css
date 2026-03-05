@@ -18,7 +18,21 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center 40%;
+  animation: photoReveal 2.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes photoReveal {
+  from {
+    transform: scale(1.1);
+    opacity: 0;
+    filter: blur(4px) brightness(0.8);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px) brightness(1);
+  }
 }
 
 /* Subtle dark gradient at top so labels are readable */
@@ -51,6 +65,9 @@
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 72px; /* below fixed navbar */
+  opacity: 0;
+  animation: fadeDown 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.4s;
 }
 
 .hero-label-group {
@@ -87,10 +104,14 @@
   letter-spacing: -0.04em;
   color: white;
   margin-top: 12px;
-  text-shadow: 0 4px 32px rgba(0,0,0,0.25);
+  text-shadow: 0 4px 32px rgba(0,0,0,0.5);
   pointer-events: none;
   /* Mix blend so it interacts slightly with the photo */
   mix-blend-mode: screen;
+  
+  opacity: 0;
+  animation: fadeUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.6s;
 }
 
 /* QR code — absolute, right side, vertically centered */
@@ -103,6 +124,44 @@
   flex-direction: column;
   align-items: center;
   gap: 6px;
+  
+  opacity: 0;
+  animation: qrFadeIn 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.8s;
+}
+
+/* ── Content Animations ── */
+@keyframes fadeUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes qrFadeIn {
+  from { 
+    transform: translateY(-50%) translateX(20px);
+    opacity: 0; 
+  }
+  to { 
+    transform: translateY(-50%) translateX(0);
+    opacity: 1; 
+  }
 }
 
 .qr-svg {
