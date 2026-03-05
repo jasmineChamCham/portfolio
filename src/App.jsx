@@ -6,7 +6,6 @@ import RecentWork from './components/RecentWork'
 import Education from './components/Education'
 import MyService from './components/MyService'
 import Showcase from './components/Showcase'
-import StayUpdated from './components/StayUpdated'
 import ClientFeedback from './components/ClientFeedback'
 import Footer from './components/Footer'
 
@@ -19,9 +18,8 @@ function App() {
         <AboutMe />
         <RecentWork />
         <Education />
-        <MyService />
+        {/* <MyService /> */}
         <Showcase />
-        <StayUpdated />
         <ClientFeedback />
       </main>
       <Footer />
