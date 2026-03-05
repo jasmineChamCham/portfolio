@@ -66,9 +66,9 @@
 
 .footer-socials {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  align-items: flex-end;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
 }
 
 .footer-social-link {

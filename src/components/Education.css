@@ -1,0 +1,236 @@
+.education {
+  background: var(--white);
+  border-top: 1px solid #e8e8e0;
+  min-height: auto;
+  padding: 80px 0;
+}
+
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.edu-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--dark);
+  line-height: 1.2;
+}
+
+/* Base styles inherited from blog UI classes in JSX */
+
+.edu-grid-override {
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.edu-card-override {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.edu-img-override {
+  background: var(--white);
+  padding: 0;
+  display: block;
+  border-bottom: 1px solid #f0f0f0;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.education .edu-img-override img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.edu-card-override:hover .edu-img-override img {
+  transform: scale(1.04);
+}
+
+/* Modal Popup Styles */
+.edu-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 26, 24, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  opacity: 0;
+  animation: modalFadeIn 0.3s forwards;
+}
+
+.edu-modal-content {
+  background: var(--white);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 40px;
+  position: relative;
+  transform: translateY(20px);
+  animation: modalSlideUp 0.4s 0.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+}
+
+.edu-modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--dark);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.edu-modal-close:hover {
+  background: var(--olive);
+  color: white;
+}
+
+.edu-modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.edu-modal-type {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--olive);
+}
+
+.edu-modal-date {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.edu-modal-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0b5394;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.edu-modal-inst {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--dark-2);
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.edu-modal-body {
+  font-size: 15px;
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.edu-modal-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.edu-modal-meta-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--olive-light);
+  margin-bottom: 4px;
+}
+
+.meta-value {
+  color: var(--dark-2);
+  font-weight: 500;
+}
+
+.meta-value {
+  color: var(--dark-2);
+  font-weight: 500;
+}
+
+.edu-modal-desc {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.edu-modal-text {
+  margin-bottom: 8px;
+}
+
+.edu-modal-text strong {
+  color: var(--dark-2);
+  display: inline-block;
+  min-width: 100px;
+}
+
+.edu-modal-resp {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #eaeaea;
+}
+
+.edu-modal-resp strong {
+  display: block;
+  font-size: 16px;
+  color: var(--dark-2);
+  margin-bottom: 12px;
+}
+
+.edu-modal-resp ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.edu-modal-resp li {
+  margin-bottom: 8px;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalSlideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .edu-modal-content {
+    padding: 24px;
+  }
+  
+  .edu-modal-title {
+    font-size: 24px;
+  }
+  
+  .edu-modal-meta-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -3,24 +3,24 @@ import './MyService.css'
 const services = [
   {
     id: 1,
-    name: 'Webflow Designer',
-    desc: 'Building responsive, pixel-perfect websites using Webflow CMS — from concept to live launch.',
+    name: 'Backend Architecture',
+    desc: 'Designing and building scalable server-side solutions using NestJS, Express, Python (FastAPI), and microservices.',
     image: '/service_orange.png',
-    tag: 'WEB',
+    tag: 'BACK',
   },
   {
     id: 2,
-    name: 'UI-UX Design',
-    desc: 'Creating user-centered interfaces that balance beauty with seamless usability for web and mobile apps.',
+    name: 'Data Engineering & AI',
+    desc: 'Processing data pipelines with GCP, Airflow, and BigQuery. Integrating AI models (TensorFlow) into full-stack apps.',
     image: null,
-    tag: 'UX',
+    tag: 'DATA',
   },
   {
     id: 3,
-    name: 'Motion Graphics',
-    desc: 'Bringing brands to life with dynamic animations, motion design, and visual storytelling.',
+    name: 'Database & Cloud',
+    desc: 'Managing relational and NoSQL databases (PostgreSQL, MongoDB, Neo4j) and deploying on AWS/GCP with Docker.',
     image: null,
-    tag: 'MG',
+    tag: 'DEVOPS',
   },
 ]
 
@@ -28,8 +28,8 @@ export default function MyService() {
   return (
     <section className="services section" id="services">
       <div className="container">
-        <p className="section-label">What I Do</p>
-        <h2 className="services-title">My Service</h2>
+        <p className="section-label">Expertise</p>
+        <h2 className="services-title">My Skills</h2>
 
         <div className="services-list">
           {services.map((s, i) => (

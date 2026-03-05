@@ -7,12 +7,13 @@ export default function Showcase() {
         <div className="showcase-top">
           <div>
             <p className="section-label">Featured Project</p>
-            <h2 className="showcase-title">Showcasing<br />My Best Work</h2>
+            <h2 className="showcase-title">AI Skincare<br />Consultation</h2>
             <p className="showcase-desc">
-              A deep dive into one of my most impactful projects — blending strategy,
-              visual storytelling, and technical execution to deliver outstanding results.
+              A web application for a beauty center that analyzes skin conditions — classifying acne, 
+              assessing severity, and providing a chatbot to answer queries using KG-RAG. Implemented with 
+              NestJS microservices, TensorFlow, Neo4j, and Airflow.
             </p>
-            <a href="#work" className="showcase-cta" id="showcase-view-btn">View Case Study →</a>
+            <a href="#work" className="showcase-cta" id="showcase-view-btn">View Architecture →</a>
           </div>
         </div>
 
@@ -25,13 +26,13 @@ export default function Showcase() {
           </div>
           <div className="showcase-side">
             <div className="showcase-info-card">
-              <span className="sc-tag">2024 — Webflow</span>
-              <h4 className="sc-project-name">Editorial Campaign</h4>
-              <p className="sc-desc">Brand launch strategy combined with immersive digital experiences.</p>
+              <span className="sc-tag">2024 — University Project</span>
+              <h4 className="sc-project-name">Facial Analysis App</h4>
+              <p className="sc-desc">Microservices architecture with Deep Learning integration.</p>
             </div>
             <div className="showcase-stat-card">
-              <span className="sc-stat-num">340%</span>
-              <span className="sc-stat-label">Engagement Increase</span>
+              <span className="sc-stat-num">5+</span>
+              <span className="sc-stat-label">AI Models Deployed</span>
             </div>
           </div>
         </div>

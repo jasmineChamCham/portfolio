@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
 import RecentWork from './components/RecentWork'
+import Education from './components/Education'
 import MyService from './components/MyService'
 import Showcase from './components/Showcase'
 import StayUpdated from './components/StayUpdated'
@@ -17,6 +18,7 @@ function App() {
         <Hero />
         <AboutMe />
         <RecentWork />
+        <Education />
         <MyService />
         <Showcase />
         <StayUpdated />

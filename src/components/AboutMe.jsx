@@ -1,9 +1,9 @@
 import './AboutMe.css'
 
 const stats = [
-  { value: '10+', label: 'Years Experience' },
-  { value: '250+', label: 'Projects Delivered' },
-  { value: '50+', label: 'Happy Clients' },
+  { value: '3.8', label: 'GPA (DUT - Ranked 3/357)' },
+  { value: '7.5', label: 'IELTS' },
+  { value: '2+', label: 'Years Experience' },
 ]
 
 export default function AboutMe() {
@@ -15,13 +15,13 @@ export default function AboutMe() {
             <p className="section-label">About Me</p>
             <h2 className="about-heading">About Me</h2>
             <p className="about-text">
-              I'm Tram, a creative designer specializing in Webflow development, UI-UX design,
-              and motion graphics. With over a decade of experience crafting digital experiences,
-              I help brands tell their stories through thoughtful, beautiful design.
+              I'm a Full-Stack Developer who enjoys building modern web applications using Node.js,
+              Python, and scalable backend architectures. I'm passionate about creating meaningful technology 
+              that solves real problems and positively impacts people's lives.
             </p>
             <p className="about-text">
-              My work bridges the gap between aesthetics and functionality — creating interfaces
-              that not only look stunning but also feel intuitive and drive real results.
+              I'm continuously exploring AI and new technologies to build smarter, more human-centered 
+              products while contributing to impactful projects with collaborative teams.
             </p>
           </div>
 

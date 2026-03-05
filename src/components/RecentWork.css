@@ -1,3 +1,5 @@
+/* Rest of the existing RecentWork.css styles... */
+
 .recent-work {
   background: var(--cream);
   min-height: 100vh;
@@ -28,22 +30,6 @@
   line-height: 1.7;
 }
 
-.rw-all-btn {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--dark);
-  letter-spacing: 0.05em;
-  border-bottom: 1.5px solid var(--dark);
-  padding-bottom: 2px;
-  transition: color 0.2s, border-color 0.2s;
-  white-space: nowrap;
-}
-
-.rw-all-btn:hover {
-  color: var(--olive);
-  border-color: var(--olive);
-}
-
 .rw-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -59,20 +45,20 @@
   overflow: hidden;
   border-radius: 8px;
   aspect-ratio: 4/3;
-  background: #d0cec8;
+  background: #fff;
 }
 
 .rw-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .rw-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(26, 26, 24, 0.72);
+  background: rgba(26, 26, 24, 0.82);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,15 +66,33 @@
   transition: opacity 0.3s;
 }
 
-.rw-overlay-text {
-  font-size: 13px;
+.rw-overlay-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.rw-overlay-link, .rw-overlay-btn {
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: white;
   border: 1.5px solid rgba(255,255,255,0.7);
-  padding: 10px 22px;
+  padding: 8px 18px;
   border-radius: 24px;
+  text-decoration: none;
+  background: transparent;
+  width: 160px;
+  text-align: center;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.rw-overlay-link:hover, .rw-overlay-btn:hover {
+  background: white;
+  color: var(--dark);
+  border-color: white;
 }
 
 .rw-card:hover .rw-overlay { opacity: 1; }
@@ -120,7 +124,145 @@
   letter-spacing: 0.1em;
 }
 
+/* Modal Styles */
+.rw-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 26, 24, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.rw-modal-content {
+  background: var(--white);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 48px;
+  position: relative;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+  animation: modalSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalSlideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.rw-modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--dark);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.rw-modal-close:hover {
+  background: var(--olive);
+  color: white;
+}
+
+.rw-modal-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.rw-modal-company {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--olive);
+}
+
+.rw-modal-year {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.rw-modal-role {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.rw-modal-headline {
+  font-size: 18px;
+  color: var(--dark-2);
+  margin-bottom: 12px;
+}
+
+.rw-modal-loc {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+.rw-modal-desc {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--gray);
+  margin-bottom: 32px;
+}
+
+.rw-modal-resp {
+  padding: 24px;
+  background: var(--cream);
+  border-radius: 8px;
+}
+
+.rw-modal-resp strong {
+  display: block;
+  font-size: 16px;
+  color: var(--dark);
+  margin-bottom: 16px;
+}
+
+.rw-modal-resp ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rw-modal-resp li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--gray);
+  padding-left: 20px;
+  position: relative;
+}
+
+.rw-modal-resp li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: var(--olive);
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   .rw-grid { grid-template-columns: 1fr; }
-  .rw-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+  .rw-modal-content { padding: 32px 24px; }
+  .rw-modal-role { font-size: 24px; }
 }
