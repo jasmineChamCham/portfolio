@@ -5,7 +5,8 @@ import AboutMe from './components/AboutMe'
 import RecentWork from './components/RecentWork'
 import Education from './components/Education'
 import MyService from './components/MyService'
-import Showcase from './components/Showcase'
+import Project from './components/Project'
+import StayUpdated from './components/StayUpdated'
 import ClientFeedback from './components/ClientFeedback'
 import Footer from './components/Footer'
 
@@ -19,7 +20,8 @@ function App() {
         <RecentWork />
         <Education />
         {/* <MyService /> */}
-        <Showcase />
+        <Project />
+        {/* <StayUpdated /> */}
         <ClientFeedback />
       </main>
       <Footer />

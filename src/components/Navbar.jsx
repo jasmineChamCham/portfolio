@@ -4,9 +4,9 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", id: "home" },
     { name: "About", id: "about" },
-    { name: "Work", id: "work" },
+    { name: "Experience", id: "work" },
     { name: "Education", id: "education" },
-    { name: "Showcase", id: "showcase" },
+    { name: "Project", id: "project" },
   ];
 
   return (
