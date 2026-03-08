@@ -6,7 +6,6 @@ import RecentWork from './components/RecentWork'
 import Education from './components/Education'
 import MyService from './components/MyService'
 import Project from './components/Project'
-import StayUpdated from './components/StayUpdated'
 import ClientFeedback from './components/ClientFeedback'
 import Footer from './components/Footer'
 
@@ -21,7 +20,6 @@ function App() {
         <Education />
         {/* <MyService /> */}
         <Project />
-        {/* <StayUpdated /> */}
         <ClientFeedback />
       </main>
       <Footer />
